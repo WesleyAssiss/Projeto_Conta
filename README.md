@@ -26,9 +26,9 @@
         ```bash
         # Se você ainda estiver na pasta 'backend', use:
         cd ../frontend
-        # Se você abriu um novo terminal e está na raiz do projeto 'Projeto-Conta', use:
+      * Se você abriu um novo terminal e está na raiz do projeto 'Projeto-Conta', use:
         ```bash
-        # cd frontend
+        cd frontend
         ```
       * Instale as dependências do frontend:
         ```bash
