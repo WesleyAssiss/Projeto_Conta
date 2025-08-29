@@ -1,0 +1,123 @@
+.card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.status.ativo {
+  background-color: #52c41a;
+}
+
+.status.inativo {
+  background-color: #f5222d;
+}
+
+.status.suspenso {
+    background-color: #faad14;
+}
+
+
+.card-body p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.card-body strong {
+  color: #555;
+}
+
+.card-totals {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px solid #f0f0f0;
+}
+
+.total-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.total-item:first-child {
+    border-right: 1px solid var(--color-border);
+}
+
+.total-item span {
+    font-size: 0.8rem;
+    color: #8c8c8c;
+    margin-bottom: 4px;
+}
+
+.total-item strong {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+
+.card-footer {
+  margin-top: auto;
+  padding-top: 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.card-footer button {
+  padding: 6px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-size: 0.8rem;
+}
+
+.card-footer button:hover {
+  background-color: var(--color-border);
+}
+
+.card-footer .delete-button:hover {
+  background-color: #ffccc7;
+  border-color: #f5222d;
+  color: #a8071a;
+}

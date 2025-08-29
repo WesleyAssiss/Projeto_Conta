@@ -1,0 +1,174 @@
+.import-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-border);
+}
+
+.import-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.import-step:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.step-content p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #555;
+    max-width: 600px;
+}
+
+.download-button {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid var(--color-border);
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.download-button:hover {
+    background-color: #e8e8e8;
+    border-color: #ccc;
+}
+
+/* Nova área de upload */
+.file-upload-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.file-drop-zone {
+    border: 2px dashed var(--color-border);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fafafa;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.file-drop-zone:hover {
+    background-color: #f0f8ff;
+    border-color: var(--color-primary);
+}
+
+.file-drop-zone input[type="file"] {
+    display: none;
+}
+
+.file-drop-zone span {
+    color: #555;
+    font-weight: 500;
+}
+
+.file-name {
+    font-weight: 500;
+    color: var(--color-primary);
+    background-color: #e6f7ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #91d5ff;
+}
+
+/* Melhoria no botão principal */
+.upload-button {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+}
+
+.upload-button:disabled {
+    background-color: #b5b5b5;
+    cursor: not-allowed;
+}
+
+.upload-button:hover:not(:disabled) {
+    background-color: #40a9ff;
+}
+
+/* Melhoria na área de resultados */
+.resultado-importacao {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.resultado-importacao.sucesso {
+    border: 1px solid #b7eb8f;
+    background-color: #f6ffed;
+}
+
+.resultado-importacao.falha {
+    border: 1px solid #ffccc7;
+    background-color: #fff1f0;
+}
+
+.resultado-importacao h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.log-container, .error-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    max-height: 200px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+.error-container {
+    background-color: #fff1f0;
+    border-color: #ffccc7;
+}
+
+.log-container ul, .error-container ul {
+    padding-left: 20px;
+    margin: 0.5rem 0 0 0;
+}

@@ -1,0 +1,5 @@
+.content-area {
+  flex-grow: 1;
+  padding: 24px;
+  overflow-y: auto; /* Adiciona scroll se o conteúdo for grande */
+}

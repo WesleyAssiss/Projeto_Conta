@@ -1,0 +1,78 @@
+.table-container {
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.styled-table thead tr {
+    background-color: #f8f8f8;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 16px;
+    white-space: nowrap; /* Impede que o conteúdo quebre linha */
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: none;
+}
+
+/* Estilos específicos para o Relatório Anual */
+.annual-report-table .secretaria-header-row {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.annual-report-table .company-row td {
+    background-color: #fff;
+}
+
+.annual-report-table .consumo-text {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 2px;
+}
+
+.actions-cell {
+    text-align: right;
+}
+
+.actions-cell button {
+    margin-left: 8px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actions-cell .edit-btn {
+    border-color: #1890ff;
+    color: #1890ff;
+    background-color: #e6f7ff;
+}
+
+.actions-cell .delete-btn {
+    border-color: #f5222d;
+    color: #f5222d;
+    background-color: #fff1f0;
+}
+
+.actions-cell .view-btn {
+    border-color: #595959;
+    color: #595959;
+    background-color: #f5f5f5;
+}

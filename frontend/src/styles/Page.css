@@ -1,0 +1,48 @@
+.page-header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.page-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-bar {
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    width: 250px;
+    font-size: 0.9rem;
+}
+
+.add-button {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-button:hover {
+  background-color: #40a9ff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
